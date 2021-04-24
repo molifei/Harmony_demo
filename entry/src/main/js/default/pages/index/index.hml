@@ -1,13 +1,25 @@
 <div class="container">
     <text class="title" onclick="doTest">
-        好的
+        好的1
     </text>
     <search onchange='searchChange'></search>
-    <list class="todo-wraper">
+    <list>
         <list-item for="{{ todolist }}" class="todo-item">
             <text class="todo-title">{{ $item.title }}</text>
             <text class="todo-title">{{ $item.date }}</text>
         </list-item>
     </list>
     <text onclick='goToOther'>去另一页</text>
+    <button>按钮</button>
+    <marquee id="customMarquee">123456</marquee>
+    <toggle
+            class="margin"
+            for="{{ toggle_list }}"
+            id="{{ $item.id }}"
+            checked="{{ $item.checked }}"
+            value="{{ $item.name }}"
+            @change="allChange"
+            @click="allClick({{ $item.id }})"
+            >
+    </toggle>
 </div>
