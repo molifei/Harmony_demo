@@ -1,0 +1,13 @@
+<div class="container">
+    <text class="title" onclick="doTest">
+        好的
+    </text>
+    <search onchange='searchChange'></search>
+    <list class="todo-wraper">
+        <list-item for="{{ todolist }}" class="todo-item">
+            <text class="todo-title">{{ $item.title }}</text>
+            <text class="todo-title">{{ $item.date }}</text>
+        </list-item>
+    </list>
+    <text onclick='goToOther'>去另一页</text>
+</div>

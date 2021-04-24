@@ -1,0 +1,8 @@
+<div>
+    <text onclick='showBox'>
+        欢迎
+    </text>
+    <text onclick='goToHome'>
+        去首页
+    </text>
+</div>
